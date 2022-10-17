@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+
+}
+body {
+  background-color: #e0f8f8;
+  background-image: linear-gradient(
+    90deg,
+    rgb(249, 182, 182),
+    rgb(251, 231, 231),
+    rgb(105, 105, 113)
+  );
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    rgb(249, 182, 182),
+    rgb(251, 231, 231),
+    rgb(105, 105, 113)
+  );
+  background-image: url("Redfort.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu a:first-child {
+  color: blue;
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: rgb(122, 96, 238);
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+  color: rgb(255, 255, 255);
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Taj Mahal";
+  }
+  20% {
+    content: "Khajuraho Temples";
+  }
+  35% {
+    content: "Meenakshi Amman Temple";
+  }
+  60% {
+    content: "Elephanta Caves";
+  }
+  80% {
+    content: "Golden Temple";
+  }
+  100% {
+    content: "Mysore Palace";
+  }
+}
+
+section .header {
+  float: center;
+  height: 90px;
+  width: 500px;
+  background-image: linear-gradient(red, white, green);
+  margin-left: 55px;
+  border-radius: 30px;
+  padding: 40px;
+}
+.taj-img {
+  height: 500px;
+  width: 500px;
+  margin-left: 40px;
+}
+div .info {
+  float: center;
+  margin: 80px;
+  margin-top: 30px;
+  width: 700px;
+  height: 350px;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: rgb(180, 194, 145);
+  border-radius: 20px;
+}
+.info p {
+  font-weight: 100;
+  font-size: larger;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(78, 79, 77);
+}
+.info p b {
+  color: rgb(253, 147, 147);
+}
+.first {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+}
+
+.second {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
